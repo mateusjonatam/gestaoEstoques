@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @estoque.data %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @estoque.quantidade %>
+</p>
+
+<p>
+  <strong>Pessoa:</strong>
+  <%= @estoque.pessoa %>
+</p>
+
+<p>
+  <strong>Operacao:</strong>
+  <%= @estoque.operacao %>
+</p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @estoque.produto %>
+</p>
+
+<%= link_to 'Edit', edit_estoque_path(@estoque) %> |
+<%= link_to 'Back', estoques_path %>
