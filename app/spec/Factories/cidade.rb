@@ -2,7 +2,7 @@ FactoryBot.define do
 
     factory :cidade do
 
-      nome { 'Marmeleiro' }
+      nome { 'Renascenca' }
   
       association :estado, factory: :estado
       
