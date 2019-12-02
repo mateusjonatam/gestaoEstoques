@@ -1,6 +1,7 @@
 class Operacao < ApplicationRecord
-    enum tipo: { venda: 0, caompra: 1, devolucaoCompra: 2, devolucaoVenda: 3 }
+    enum tipo: { venda: 1, caompra: 2, devolucaoCompra: 3, devolucaoVenda: 4 }
 
-    validates :nome, :tipo, presence: true
+    validates :nome, presence: true
+    validates :nome, uniqueness: true
 
 end
